@@ -33,7 +33,7 @@ def parameter_parser():
     parser.add_argument('--negative_slope', type=float, default=0.2, help='Negative slope for LeakyReLU')
 
     # Training parameters
-    parser.add_argument('--epochs', type=int, default=25, help='Number of training epochs')
+    parser.add_argument('--epochs', type=int, default=50, help='Number of training epochs')
     parser.add_argument('--batch_size', type=int, default=256, help='Batch size')
     parser.add_argument('--lr', type=float, default=0.001, help='Learning rate')
     parser.add_argument('--weight_decay', type=float, default=5e-4, help='Weight decay')
@@ -43,7 +43,7 @@ def parameter_parser():
     parser.add_argument('--val_ratio', type=float, default=0.7, help='Validation time ratio')
     parser.add_argument('--test_ratio', type=float, default=0.85, help='Test time ratio')
     parser.add_argument('--mask_ratio', type=float, default=0.0, help='Ratio of nodes to mask')
-    parser.add_argument('--neg_seed', type=int, default=2023, help='Negative sampling seed')
+    parser.add_argument('--neg_seed', type=int, default=2024, help='Negative sampling seed')
 
     # Neighbor sampling parameters
     parser.add_argument('--num_neighbors', type=int, nargs='+', default=[30, 10], help='Number of neighbors to sample at each layer')
@@ -542,7 +542,7 @@ def main():
     # for testing only
     # model.load_state_dict(torch.load(root_path + '/models/cat.pkl')['model'])
     # test_loss, test_auc_old, test_acc_old, test_f1_old, test_ap_old, test_mrr_old, test_auc_new, test_acc_new, test_f1_new, test_ap_new, test_mrr_new \
-    #     = test(model, test_data, new_node_set, item_type)
+    #     = test(model, test_data, new_node_set, item_type, args.device)
 
     print('final best for old nodes:')
     print('auc {:.4f} acc {:.4f} f1 {:.4f} ap {:.4f} mrr {:.4f}'.format(test_auc_old, test_acc_old, test_f1_old, test_ap_old, test_mrr_old))
