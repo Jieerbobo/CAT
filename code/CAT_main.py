@@ -490,8 +490,8 @@ def main():
 
     # get pre-trained embeddings using metapath2vec
     # user_emb, item_emb = get_embedding(args.emb_size, train_data, val_data, test_data, item_type, [("user", "to", "item"), ("item", "to", "type"), ("type", "to", "item"), ("item", "to", "user")], device)
-    user_emb = torch.from_numpy(np.loadtxt(root_path + '/heterogeneous/uitiu_user_emb_meta_{}.txt'.format(args.emb_size))).type(torch.float32)
-    item_emb = torch.from_numpy(np.loadtxt(root_path + '/heterogeneous/uitiu_item_emb_meta_{}.txt'.format(args.emb_size))).type(torch.float32)
+    user_emb = torch.from_numpy(np.loadtxt(root_path + '/code/uitiu_user_emb_meta_{}.txt'.format(args.emb_size))).type(torch.float32)
+    item_emb = torch.from_numpy(np.loadtxt(root_path + '/code/uitiu_item_emb_meta_{}.txt'.format(args.emb_size))).type(torch.float32)
     train_data["user"].x = val_data["user"].x = test_data["user"].x = user_emb
     train_data["item"].x = val_data["item"].x = test_data["item"].x = item_emb
     print("user_emb:", user_emb.shape, "item_emb:", item_emb.shape, "\n")
