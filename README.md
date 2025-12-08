@@ -1,5 +1,5 @@
 # Source code for CAT published at NDSS 2026
-J. Wang, Z. Yan, J. Lan, X. Li and E. Bertino, "CAT: Can Trust be Predicted with Context-Awareness in Dynamic Heterogeneous Networks?" to appear in Proceedings of the Network and Distributed System Security (NDSS) Symposium, San Diego, CA, USA, 2026.
+J. Wang, Z. Yan, J. Lan, X. Li and E. Bertino, "CAT: Can Trust be Predicted with Context-Awareness in Dynamic Heterogeneous Networks?" to appear in Proceedings of the Network and Distributed System Security Symposium (NDSS), San Diego, CA, USA, 2026.
 
 ## Model architecture
 <div align="center">
@@ -36,7 +36,7 @@ If you find this work useful, please consider citing it as follows:
 @inproceedings{wang2026cat,
   title={CAT: Can Trust be Predicted with Context-Awareness in Dynamic Heterogeneous Networks?},
   author={Wang, Jie and Yan, Zheng and Lan, Jiahe and Li, Xuyan and Bertino, Elisa},
-  booktitle={Proceedings of the 33rd Annual Network and Distributed System Security (NDSS) Symposium},
+  booktitle={Proceedings of the 33rd Annual Network and Distributed System Security Symposium (NDSS)},
   year={2026}
 }
 ```
