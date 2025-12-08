@@ -23,5 +23,20 @@ cd CAT/code
 python CAT_main.py
 ```
 
+### Further information
+* Detailed information on the Epinions and Ciao datasets is available at this [URL](https://www.cse.msu.edu/~tangjili/trust.html). The CiaoDVD dataset can be downloaded from this [URL](https://guoguibing.github.io/librec/datasets.html). Note that the Epinions dataset provided in this repository has been preprocessed by us.
+* The implementation of Metapath2vec could be found at this [URL](https://github.com/pyg-team/pytorch_geometric/blob/master/examples/hetero/metapath2vec.py).
+
+## How to cite
+If you find this work useful, please consider citing it as follows:
+```bibtex
+@inproceedings{wang2026cat,
+  title={CAT: Can Trust be Predicted with Context-Awareness in Dynamic Heterogeneous Networks?},
+  author={Wang, Jie and Yan, Zheng and Lan, Jiahe and Li, Xuyan and Bertino, Elisa},
+  booktitle={Proceedings of the 33rd Annual Network and Distributed System Security (NDSS) Symposium},
+  year={2026}
+}
+```
+
 ## Comments
 This repository provides an example of how CAT runs on the Epinions dataset under clean settings. If you have any questions about the code, please feel free to ask here or contact me via email at <jwang1997@stu.xidian.edu.cn>. This work is designed based on [TGAT](https://github.com/StatsDLMathsRecomSys/Inductive-representation-learning-on-temporal-graphs) and [HGAT](https://github.com/BUPT-GAMMA/HGAT). Thanks for their excellent work!
